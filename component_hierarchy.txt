@@ -1,0 +1,32 @@
+Index.js:
+    Renders <App />.
+App:
+    Renders <CardTable />.
+
+CardTable:
+    Renders <PlayingCardList /> and <PokeDex /> next to each other.
+
+PlayingCardList:
+    Renders multiple <PlayingCard /> components.
+        Each <PlayingCard /> has a unique uuid key and a front image source URL.
+
+PokeDex:
+    Renders <PokemonSelect /> and multiple <PokemonCard /> components.
+        <PokemonSelect /> has an addPokemon async function for its click event button.
+        Each <PokemonCard /> has a key, front image source, back image source, name, and stats object.
+
+Index.js
+│
+└── App
+    │
+    └── CardTable
+        ├── PlayingCardList
+        │   ├── PlayingCard (uuid key, front image URL)
+        │   ├── PlayingCard (uuid key, front image URL)
+        │   ├── ...
+        │
+        └── PokeDex
+            ├── PokemonSelect (addPokemon async function)
+            └── PokemonCard (uuid key, front image URL, back image URL, name, stats)
+            └── PokemonCard (uuid key, front image URL, back image URL, name, stats)
+            └── ...
