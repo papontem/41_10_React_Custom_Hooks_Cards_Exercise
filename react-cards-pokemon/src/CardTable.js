@@ -11,6 +11,7 @@ function CardTable() {
       <header>
         <h1 className="CardTable-heading">Check out all my cards.</h1>
       </header>
+      {/* PAM: RENDERING BOTH API CALLING COMPONENTS */}
       <main>
         <PlayingCardList />
         <PokeDex />
