@@ -1,13 +1,12 @@
 /* 
-Part2
-- Both the PokemonCard and the PlayingCard components can be flipped over when clicked on. 
-- You may have noticed that there is some duplicate code in these components.
-- Create a hooks.js file in src/, and in that file write a custom hook called useFlip which will hold the business logic for flipping any type of card.
-- useFlip doesn’t need to take an argument, and similar to useState, it should return an array with two elements.
-- The first element is the current flip state of the card, and the second element is a function that will toggle the flip state.
-- Once you’ve written this hook, refactor PokemonCard and PlayingCard to use this custom hook.
+   Part2
+    - Both the PokemonCard and the PlayingCard components can be flipped over when clicked on. 
+    - You may have noticed that there is some duplicate code in these components.
+    - Create a hooks.js file in src/, and in that file write a custom hook called useFlip which will hold the business logic for flipping any type of card.
+    - useFlip doesn’t need to take an argument, and similar to useState, it should return an array with two elements.
+    - The first element is the current flip state of the card, and the second element is a function that will toggle the flip state.
+    - Once you’ve written this hook, refactor PokemonCard and PlayingCard to use this custom hook.
 */
-import { useState } from "react";
 
 function useFlip() {
     // call useState, "reserve piece of state"
@@ -23,7 +22,13 @@ function useFlip() {
 
 export default useFlip;
 
+// ---------
+// PAM: Code thats in both components:
 
+// const [isFacingUp, setIsFacingUp] = useState(true);
+// const flipCard = () => {
+//     setIsFacingUp((isUp) => !isUp);
+// };
 
 // ---------
 // PAM: DEMO CODE
